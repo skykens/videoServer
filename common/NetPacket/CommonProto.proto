@@ -1,0 +1,29 @@
+syntax="proto2";
+package NetWork;
+message heart{
+    optional int32 fd=1;
+    optional bool flag=2;
+}
+message clientLogin{
+    optional string name=1;
+    optional string psw=2;
+
+}
+
+message serverLogin{
+    optional int32 userid=1;
+    optional bool ret=2;
+}
+
+message clientRegister{
+    optional string name=1;
+    optional string psw=2;
+    optional string psw_question=3;
+    optional string psw_answer=4;
+
+}
+message serverRegister{
+    optional int32 userid=1;
+    optional bool ret=2;
+}
+
